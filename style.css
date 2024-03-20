@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(var(--GRID_WIDTH), 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c3e50; 
+    border-radius: 10px; 
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2); 
+  }
+  
+  .cell {
+    width: 60px;
+    aspect-ratio: 1/1;
+    background-color: #ecf0f1;
+    border: none; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    transition: background-color 0.25s ease; 
+  }
+  
+  .red, .yellow {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #e74c3c;
+  }
+  
+  .yellow {
+    background-color: #f1c40f; 
+  }
+  
+  #resetButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  
+  #resetButton:hover {
+    background-color: #2980b9; 
+  }
+  
+  #buttons, #main {
+    text-align: center;
+  }
+  
+  #player-turn, #winner {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
